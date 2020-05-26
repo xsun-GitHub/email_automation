@@ -24,10 +24,9 @@ def mail_auto_beta(Contact_list,sending_time):
     Host_name = 'smtp-auth.desy.de'
 
 
-    body = '''兔宝宝主人：
-这封邮件是熊宝宝主人的小黄人管家发的，是提醒你叫宝宝起床的。
-哈哈哈哈，不许他继续睡觉了，他今天有会议 10：30am.
-mua~~
+    body = '''熊主人：
+这封邮件是熊主人的小黄人管家发的，是提醒你叫他起床的。
+*****
 小黄人，敬上！
             '''
     while datetime.datetime.now() < sending_time:
@@ -134,14 +133,6 @@ def send_folders(parent_path):
     return
 
 if __name__=='__main__':
-    # Contact_list = ['2541295710@qq.com','lightdrivencarbon@gmail.com',\
-    # 'chu0518@qq.com','haohu3@asu.edu','xinyang.li@desy.de',\
-    # 'xiao.sun@desy.de','ywang542@asu.edu','chufengl@icloud.com']
-    #Contact_list = ['2541295710@qq.com']
-    ################################################################
-    #Contact_list = ['2541295710@qq.com','chufengl@icloud.com']
-    #sending_time = datetime.datetime(2020,5,8,2,30,00)
-    #mail_auto_beta(Contact_list,sending_time)
     ################################################################
     parent_path = os.path.abspath(sys.argv[1])
     send_folders(parent_path)
