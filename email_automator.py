@@ -69,10 +69,6 @@ Chufeng Li
             print('The message sent to recipient %s !'%(recipient))
     return
 if __name__=='__main__':
-    # Contact_list = ['2541295710@qq.com','lightdrivencarbon@gmail.com',\
-    # 'chu0518@qq.com','haohu3@asu.edu','xinyang.li@desy.de',\
-    # 'xiao.sun@desy.de','ywang542@asu.edu','chufengl@icloud.com']
     Contact_list = ['chufengl@icloud.com']
-    #Contact_list = ['2541295710@qq.com','chufengl@icloud.com']
     sending_time = datetime.datetime(2020,5,8,2,30,00)
     mail_auto_beta(Contact_list,sending_time)
